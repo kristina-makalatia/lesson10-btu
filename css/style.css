@@ -1,0 +1,57 @@
+.test1::before {
+    content: 'Hello';
+    color: red;
+    background-color: yellow;
+    font-size: 30px;
+}
+/* .test1::after {
+    content: url(../images/smiley.gif);  
+} */
+/* .test1::after {
+    content: ' \26D4';
+} */
+.test1::after {
+    content: ' ';
+    width: 2px;
+    height: 30px;
+    background-color: blue;
+    display: inline-block;
+    margin-left: 20px;
+}
+/* background image proeprty */
+.bg-image {
+    background-image: url('../images/photographer.jpg');
+    height: 500px;
+    max-width: 900px;
+    width: 100%;
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.box1 {
+    width: 150px;
+    height: 150px;
+}
+.box1:first-child {
+    background-color: red;
+}
+.box1:nth-child(2){
+    background-color: green;
+}
+.box1:nth-child(3){
+    background-color: pink;
+}
+.box1:nth-child(4){
+    background-color: blue;
+}
+
+
+
